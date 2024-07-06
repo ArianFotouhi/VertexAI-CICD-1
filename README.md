@@ -70,3 +70,23 @@ steps:
   - '-c'
   - |
     gcloud beta ai endpoints deploy-model $(cat /workspace/endpoint_id.txt) --region=us-central1 --model=$(cat /workspace/model_id.txt) --display-name=bikeshare-model-endpoint --traffic-split=0=100 --machine-type=n1-standard-4
+```
+
+## Test Script
+The test script test-training.py contains test cases for validating the training and preprocessing logic.
+
+### Tests Include:
+**Model Name Validation: Ensures invalid model names raise an error.
+**Model Training Validation: Verifies model training and checks RMSE.
+**Model Artifact Validation: Confirms the model artifact is saved in the Cloud Storage bucket.
+**Data Preprocessing Validation: Checks the correctness of preprocessing output.
+
+## Model Training Script
+The model-training-code.py script contains functions to load data, preprocess data, train the model, and save the model artifact.
+
+### Key Functions:
+**Data Loading: Reads data from a CSV file in a Google Cloud Storage bucket.
+**Data Preprocessing: Prepares the feature matrix and target variable.
+**Model Training: Trains a RandomForestRegressor model.
+**Model Artifact Saving: Saves the trained model and uploads it to Cloud Storage.
+
