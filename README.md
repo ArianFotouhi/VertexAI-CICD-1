@@ -19,18 +19,25 @@ The CI/CD pipeline automates the process of building, testing, and deploying a m
 
 1. **Create a Vertex AI instance and use Jupyter Notebook**:
    - Upload your files into the Jupyter Notebook as shown in the image.
+![CC Image](https://github.com/ArianFotouhi/VertexAI-CICD-1/blob/main/assets/vertexai-1.png?raw=true)
 
 2. **Create a bucket and upload dataset files**:
    - Create a Google Cloud Storage bucket.
    - Upload your dataset files into the bucket.
+![CC Image](https://github.com/ArianFotouhi/VertexAI-CICD-1/blob/main/assets/buckets.png?raw=true)
 
 3. **Submit a build job**:
    - Go to Vertex AI.
    - Open a terminal in your instance.
-   - Submit a build job (CICD job) from the terminal.
-
+   - Submit a build job (CICD job) from the terminal using
+```
+gcloud builds submit --region us-central1
+```
+![CC Image](https://github.com/ArianFotouhi/VertexAI-CICD-1/blob/main/assets/vertexai-2.png?raw=true)
 4. **Monitor job progress**:
    - Use Google Cloud Build to observe the job progress.
+![CC Image](https://github.com/ArianFotouhi/VertexAI-CICD-1/blob/main/assets/builds.png?raw=true)
+
 
 ## Pipeline Configuration
 
