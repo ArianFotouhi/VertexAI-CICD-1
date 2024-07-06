@@ -1,0 +1,5 @@
+pandas
+scikit-learn
+gcsfs
+google-cloud-storage
+pytest
