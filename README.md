@@ -15,6 +15,23 @@ The CI/CD pipeline automates the process of building, testing, and deploying a m
 7. **Create Endpoint**: Creates an endpoint for serving the model.
 8. **Deploy Model to Endpoint**: Deploys the model to the created endpoint.
 
+## Steps:
+
+1. **Create a Vertex AI instance and use Jupyter Notebook**:
+   - Upload your files into the Jupyter Notebook as shown in the image.
+
+2. **Create a bucket and upload dataset files**:
+   - Create a Google Cloud Storage bucket.
+   - Upload your dataset files into the bucket.
+
+3. **Submit a build job**:
+   - Go to Vertex AI.
+   - Open a terminal in your instance.
+   - Submit a build job (CICD job) from the terminal.
+
+4. **Monitor job progress**:
+   - Use Google Cloud Build to observe the job progress.
+
 ## Pipeline Configuration
 
 The pipeline configuration is defined in a YAML file used by Google Cloud Build to execute the steps.
@@ -89,4 +106,6 @@ The model-training-code.py script contains functions to load data, preprocess da
 **Data Preprocessing: Prepares the feature matrix and target variable.
 **Model Training: Trains a RandomForestRegressor model.
 **Model Artifact Saving: Saves the trained model and uploads it to Cloud Storage.
+
+
 
