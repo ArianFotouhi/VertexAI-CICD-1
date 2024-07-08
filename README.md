@@ -1,6 +1,6 @@
 # CI/CD Pipeline for Vertex AI Model - Bikeshare Prediction
 
-This repository contains the code and CI/CD pipeline configuration for training and deploying a Bikeshare prediction model on Google Cloud Vertex AI.
+The repository comprises the code and CI/CD pipeline configuration for training and deploying a Bikeshare prediction model on Google Cloud Vertex AI.
 
 ## Overview
 
